@@ -1,41 +1,54 @@
-// var num = Math.random()
-// document.write(num)
 
+// var tail = prompt("enter tail name")
+// var head = prompt("enter head name")
 
-// var userinp = prompt('Write hat or tail')
+// var answer = Math.round(Math.random())
 
-// var num = (Math.round(Math.random()))
-// document.write(num)
-// if(num===0 || num===1){
-//     document.write("you win")
-//     if(num===0){
-//         document.write(hats)
-//     } if(num===1){
-//         document.write(tail)
-//     }
-// }
+// if (answer === 0) {
+//     document.write (  head + " wins")
 
-// else if(num===0){
-//     document.write(hats)
-// }else if(num===1){
-//     document.write(tail)
-// }
-// else{
-//     tail
+// } else {
+//     document.write(tail + " wins")
+    
 // }
 
 
-// var hi = Math.round(Math.random());
-// document.write(hi);
 
-var tail = prompt("enter tail name")
-var head = prompt("enter head name")
 
-var answer = Math.round(Math.random())
+
+
+// var tail = prompt("Enter Tail's name");
+// var head = prompt("Enter Head's name");
+
+// var answer = Math.round(Math.random());
+// var winner = (answer === 0) ? head : tail;
+
+// document.getElementById("gameResult").innerHTML = `
+//     <h1 class="result">${winner} wins!</h1>
+// `;
+
+
+
+
+
+
+
+
+
+var tail = prompt("Enter Tail's name");
+var head = prompt("Enter Head's name");
+
+var answer = Math.round(Math.random());
 
 if (answer === 0) {
-    document.write(head + " wins")
+    document.getElementById("gameResult").innerHTML = `
+        <h1 class="result  animate__animated animate__heartBeat animate__infinite animate__slower ">${head} wins!</h1>
+    `;
 } else {
-    document.write(tail + " wins")
-    
+    document.getElementById("gameResult").innerHTML = `
+        <h1 class="result  animate__animated animate__heartBeat animate__infinite animate__slower ">${tail} wins!</h1>
+    `;
 }
+
+
+
